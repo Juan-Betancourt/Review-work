@@ -1,16 +1,32 @@
-# This is a sample Python script.
+# A variable is a container for a value, which can be of various types
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+'''
+This is a
+multiline comment or docstring(use to define a functions purpose)
+It can be in single or double quotes
+'''
 
+"""
+Pep8 - Triple should be used for docstring
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+VARIABLE RULES:
+    - Variables names are case sensitive(name and NAME are different variables)
+    - Must start with a letter or an underscore
+    - Can have numbers in the variable but cannot start with one
+"""
 
+# x = 1           # int
+# y = 2.5         # float
+# name = 'John'   # str (strings can have single or double quotes
+# is_cool = True  # bool
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Multiple Assignments
+__set__ = x, y, name, is_cool = (1, 2.5, 'John', True)
+# print(__set__)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Casting
+x = str(x)
+y = int(y)
+z = float(y)
+
+print(x, y, z)
