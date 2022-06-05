@@ -179,47 +179,77 @@ age = 39
 # A Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
 
 # Create dict
-person = {
-    'first_name': 'John',
-    'last_name': ' Doe',
-    'age': 30
-}
+# person = {
+#     'first_name': 'John',
+#     'last_name': ' Doe',
+#     'age': 30
+# }
+#
+# # Use constructor
+# # person2 = dict(first_name='Sara', last_name='Williams')
+#
+# # Get value
+# print(person['first_name'])
+# print(person.get('last_name'))
+#
+# # Add key/value
+# person['phone'] = '555-555-5555'
+#
+# # Get dict keys
+# print(person.keys())
+#
+# # Get dict items
+# print(person.items())
+#
+# # Copy dict
+# person2 = person.copy()
+# person2['city'] = 'Florida'
+#
+# # Remove item
+# del(person['age'])
+# person.pop('phone')
+#
+# # Clear
+# person.clear()
+#
+# # Get length
+# print(len(person2))
+#
+# # List of dict
+# people = [
+#     {'name': 'Martha', 'age': 30},
+#     {'name': 'Kevin', 'age': 25}
+# ]
+# print(people[1]['name'])
 
-# Use constructor
-# person2 = dict(first_name='Sara', last_name='Williams')
+# A function is a block of code which only runs when it is called. In Python, we do not use curly brackets, we use indentation with tabs or spaces
 
-# Get value
-print(person['first_name'])
-print(person.get('last_name'))
+# create function
 
-# Add key/value
-person['phone'] = '555-555-5555'
 
-# Get dict keys
-print(person.keys())
+def say_hello(name):
+    print(f'Hello {name}')
 
-# Get dict items
-print(person.items())
 
-# Copy dict
-person2 = person.copy()
-person2['city'] = 'Florida'
+say_hello('John Doe')
 
-# Remove item
-del(person['age'])
-person.pop('phone')
+# Return value
 
-# Clear
-person.clear()
 
-# Get length
-print(len(person2))
+def get_sum(num1, num2):
+    total = num1 + num2
+    return total
 
-# List of dict
-people = [
-    {'name': 'Martha', 'age': 30},
-    {'name': 'Kevin', 'age': 25}
-]
-print(people[1]['name'])
 
+num = get_sum(3, 5)
+print(num)
+
+
+# A lambda function is a small anonymous function.
+# A lambda function can take any number of arguments, but can only have one expression. Very similar to JS arrow functions
+# add_sum = lambda num1, num2: num1 + num2
+def add_sum(num1, num2): return num1 + num2
+
+
+print(add_sum(10, 3))
 
