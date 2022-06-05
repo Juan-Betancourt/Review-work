@@ -99,41 +99,80 @@ age = 39
 # A List is a collection which is ordered and changeable. Allows duplicate members.
 
 # Create List
-numbers = [1, 2, 3, 4, 5]
-fruits = ['Apples', 'Oranges', 'Grapes', 'Pears']
+# numbers = [1, 2, 3, 4, 5]
+# fruits = ['Apples', 'Oranges', 'Grapes', 'Pears']
+#
+# # Use a Constructor
+# # numbers2 = list((1, 2, 3, 4, 5))
+#
+# # Get a value
+# print(fruits[1])
+#
+# # Get length
+# print(len(fruits))
+#
+# # Append to list
+# fruits.append('Mangos')
+#
+# # Remove from list
+# fruits.remove('Grapes')
+#
+# # Insert into position
+# fruits.insert(2, 'Strawberries')
+#
+# # Change value
+# fruits[0] = 'Blueberries'
+#
+# # Remove with Pop
+# fruits.pop(2)
+#
+# # reverse list
+# fruits.reverse()
+#
+# # Sort list
+# fruits.sort()
+#
+# # Reverse sort
+# fruits.sort(reverse=True)
+#
+# print(fruits)
 
-# Use a Constructor
-# numbers2 = list((1, 2, 3, 4, 5))
+# A Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 
-# Get a value
+# Create tuple
+fruits = ('Apples', 'Oranges', 'Grapes')
+#fruits2 = tuple(('Apples', 'Oranges', 'Grapes')
+
+# Single value needs trailing comma
+fruits2 = ('Apples',)
+
+# Get value
 print(fruits[1])
 
-# Get length
+# Can't change value
+# fruits[0] = 'Pears'
+
+# Delete tuple
+del fruits2
+
 print(len(fruits))
 
-# Append to list
-fruits.append('Mangos')
+# A set is a collections which is unordered and unindexed. No duplicate members.
 
-# Remove from list
-fruits.remove('Grapes')
+# Create set
+fruits_set = {'Apples', 'Oranges', 'Mango'}
 
-# Insert into position
-fruits.insert(2, 'Strawberries')
+# Check if in set
+print('Apples' in fruits_set)
 
-# Change value
-fruits[0] = 'Blueberries'
+# Add to set
+fruits_set.add('Grape')
 
-# Remove with Pop
-fruits.pop(2)
+# Clear set
+fruits_set.clear()
 
-# reverse list
-fruits.reverse()
+# Delete Set
+del fruits_set
 
-# Sort list
-fruits.sort()
-
-# Reverse sort
-fruits.sort(reverse=True)
-
-print(fruits)
+print(fruits_set)
 
