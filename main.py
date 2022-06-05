@@ -49,50 +49,91 @@ age = 39
 # # F-Strings (Python 3.6+)
 # print(f'Hello, my name is {name} and I am {age}')
 
-# String Methods
+# # String Methods
+#
+# s = 'hello world'
+#
+# # Capitalize string
+# print(s.capitalize())
+#
+# # Make all uppercase
+# print(s.upper())
+#
+# # Make all lower
+# print(s.lower())
+#
+# # Swap case
+# print(s.swapcase())
+#
+# # Get length -- Important and can be utilized for any data type
+# print(len(s))
+#
+# # Replace
+# print(s.replace('world', 'everyone'))
+#
+# # Count
+# sub = 'h'
+# print(s.count(sub))
+#
+# # Starts with
+# print(s.startswith('hello'))
+#
+# # Ends with
+# print(s.endswith('d'))
+#
+# # Split into a list
+# print(s.split())
+#
+# # Find position
+# print(s.find('r'))
+#
+# # Is all alphanumeric
+# print(s.isalnum())
+#
+# # Is all alphabetic
+# print(s.isalpha())
+#
+# # Is all numeric
+# print(s.isnumeric())
 
-s = 'hello world'
+# A List is a collection which is ordered and changeable. Allows duplicate members.
 
-# Capitalize string
-print(s.capitalize())
+# Create List
+numbers = [1, 2, 3, 4, 5]
+fruits = ['Apples', 'Oranges', 'Grapes', 'Pears']
 
-# Make all uppercase
-print(s.upper())
+# Use a Constructor
+# numbers2 = list((1, 2, 3, 4, 5))
 
-# Make all lower
-print(s.lower())
+# Get a value
+print(fruits[1])
 
-# Swap case
-print(s.swapcase())
+# Get length
+print(len(fruits))
 
-# Get length -- Important and can be utilized for any data type
-print(len(s))
+# Append to list
+fruits.append('Mangos')
 
-# Replace
-print(s.replace('world', 'everyone'))
+# Remove from list
+fruits.remove('Grapes')
 
-# Count
-sub = 'h'
-print(s.count(sub))
+# Insert into position
+fruits.insert(2, 'Strawberries')
 
-# Starts with
-print(s.startswith('hello'))
+# Change value
+fruits[0] = 'Blueberries'
 
-# Ends with
-print(s.endswith('d'))
+# Remove with Pop
+fruits.pop(2)
 
-# Split into a list
-print(s.split())
+# reverse list
+fruits.reverse()
 
-# Find position
-print(s.find('r'))
+# Sort list
+fruits.sort()
 
-# Is all alphanumeric
-print(s.isalnum())
+# Reverse sort
+fruits.sort(reverse=True)
 
-# Is all alphabetic
-print(s.isalpha())
-
-# Is all numeric
-print(s.isnumeric())
+print(fruits)
 
