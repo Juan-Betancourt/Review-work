@@ -21,12 +21,78 @@ VARIABLE RULES:
 # is_cool = True  # bool
 
 # Multiple Assignments
-__set__ = x, y, name, is_cool = (1, 2.5, 'John', True)
-# print(__set__)
+# __set__ = x, y, name, is_cool = (1, 2.5, 'John', True)
+# # print(__set__)
+#
+# # Casting
+# x = str(x)
+# y = int(y)
+# z = float(y)
+#
+# print(x, y, z)
 
-# Casting
-x = str(x)
-y = int(y)
-z = float(y)
+# -- Strings --
 
-print(x, y, z)
+#Strings in python are surrounded by either single or double quotation marks. Let's look at string formatting and some string methods
+
+name = 'J'
+age = 39
+
+# Concatenate
+# print('Hello, my name is ' + name +  ' and I am ' + str(age))
+
+# String Formatting
+
+# Arguments by position
+# print('My name is {name} and I am {age}'.format(name=name, age=age))
+#
+# # F-Strings (Python 3.6+)
+# print(f'Hello, my name is {name} and I am {age}')
+
+# String Methods
+
+s = 'hello world'
+
+# Capitalize string
+print(s.capitalize())
+
+# Make all uppercase
+print(s.upper())
+
+# Make all lower
+print(s.lower())
+
+# Swap case
+print(s.swapcase())
+
+# Get length -- Important and can be utilized for any data type
+print(len(s))
+
+# Replace
+print(s.replace('world', 'everyone'))
+
+# Count
+sub = 'h'
+print(s.count(sub))
+
+# Starts with
+print(s.startswith('hello'))
+
+# Ends with
+print(s.endswith('d'))
+
+# Split into a list
+print(s.split())
+
+# Find position
+print(s.find('r'))
+
+# Is all alphanumeric
+print(s.isalnum())
+
+# Is all alphabetic
+print(s.isalpha())
+
+# Is all numeric
+print(s.isnumeric())
+
