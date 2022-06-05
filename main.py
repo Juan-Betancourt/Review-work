@@ -139,40 +139,87 @@ age = 39
 
 # A Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 
-# Create tuple
-fruits = ('Apples', 'Oranges', 'Grapes')
-#fruits2 = tuple(('Apples', 'Oranges', 'Grapes')
+# # Create tuple
+# fruits = ('Apples', 'Oranges', 'Grapes')
+# #fruits2 = tuple(('Apples', 'Oranges', 'Grapes')
+#
+# # Single value needs trailing comma
+# fruits2 = ('Apples',)
+#
+# # Get value
+# print(fruits[1])
+#
+# # Can't change value
+# # fruits[0] = 'Pears'
+#
+# # Delete tuple
+# del fruits2
+#
+# print(len(fruits))
+#
+# # A set is a collections which is unordered and unindexed. No duplicate members.
+#
+# # Create set
+# fruits_set = {'Apples', 'Oranges', 'Mango'}
+#
+# # Check if in set
+# print('Apples' in fruits_set)
+#
+# # Add to set
+# fruits_set.add('Grape')
+#
+# # Clear set
+# fruits_set.clear()
+#
+# # Delete Set
+# del fruits_set
+#
+# print(fruits_set)
 
-# Single value needs trailing comma
-fruits2 = ('Apples',)
+# A Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
+
+# Create dict
+person = {
+    'first_name': 'John',
+    'last_name': ' Doe',
+    'age': 30
+}
+
+# Use constructor
+# person2 = dict(first_name='Sara', last_name='Williams')
 
 # Get value
-print(fruits[1])
+print(person['first_name'])
+print(person.get('last_name'))
 
-# Can't change value
-# fruits[0] = 'Pears'
+# Add key/value
+person['phone'] = '555-555-5555'
 
-# Delete tuple
-del fruits2
+# Get dict keys
+print(person.keys())
 
-print(len(fruits))
+# Get dict items
+print(person.items())
 
-# A set is a collections which is unordered and unindexed. No duplicate members.
+# Copy dict
+person2 = person.copy()
+person2['city'] = 'Florida'
 
-# Create set
-fruits_set = {'Apples', 'Oranges', 'Mango'}
+# Remove item
+del(person['age'])
+person.pop('phone')
 
-# Check if in set
-print('Apples' in fruits_set)
+# Clear
+person.clear()
 
-# Add to set
-fruits_set.add('Grape')
+# Get length
+print(len(person2))
 
-# Clear set
-fruits_set.clear()
+# List of dict
+people = [
+    {'name': 'Martha', 'age': 30},
+    {'name': 'Kevin', 'age': 25}
+]
+print(people[1]['name'])
 
-# Delete Set
-del fruits_set
-
-print(fruits_set)
 
